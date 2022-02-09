@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="/design.css">
+  </head>
+  <body>
+    <button><a href="/navigation.html">back</a></button>
+    <h1>do you remember? 2 night of spetermber <br>9/2/21 11:13 AM</h1>
+    <p>I found out why the app from yesteryear wasn't working</p>
+    <p>well, sort of..</p>
+    <p>it has to do with the "let periodOne = Calendar.current(bySettingHour: 7, minute: 10, second: 0)" i used.</p>
+    <p>My theory is that watchOS handles that command differently than iOS</p>
+    <p>because I recompiled the app for iOS, and it worked as expected, so this is a watchOS issue.</p>
+    <p>I'm assuming iOS and watchOS interpret Calendar.current differently.</p>
+    <p>See, I'm thinking that watchOS doesn't realize when it's a new day, and therefore doesn't add the times to the "Calendar"</p>
+    <p>And I also discovered a way to fix that issue</p>
+    <p>It's as simple as literally just restarting the watch every day.</p>
+    <p>so yeah that's a part of my daily routine now :)</p>
+  </body>
+</html>

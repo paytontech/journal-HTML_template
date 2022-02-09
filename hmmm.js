@@ -1,0 +1,1 @@
+window.location.replace("https://paytontech.github.io/navigation.html");

@@ -1,0 +1,47 @@
+#welcome {
+    font-family: sans-serif;
+      color: #4287f5;
+  }
+  #idk {
+    font-family: cursive;
+  }
+  #hahafunny {
+    font-family: sans-serif;
+      color: #edf50c;
+  }
+  #time {
+    color: #ff1900;
+  }
+  #time {
+    font-family: fantasy;
+  }
+  #mememe {
+    font-family: fantasy;
+  }
+  #funnymeme {
+    font-family: fantasy;
+  }
+  
+  img {
+    width: 200px;
+    height: 150px;
+    object-fit: contain;
+  }
+  #badkeyboard {
+    font-family: monospace;
+  }
+  #newbutton {
+   color: #4287f5;
+    
+  }
+  #newbutton2 {
+    color: #4287f5;
+    background-color: #4CAF50;
+  }
+  #fonthahaah {
+    font-family: fantasy;
+    font-style: oblique;
+    font-variant: small-caps;
+    
+  }
+  

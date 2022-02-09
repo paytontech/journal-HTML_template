@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="/design.css">
+    
+    <script src="/title.js"></script>
+    
+   
+  </head>
+  <center><center><b><p class="paytondev">paytondev</p></b></center></center>
+  <a href="/navigation.html"><button id="back">&#60; navigation</button></a>
+  
+  <body onload="getTitle();">
+    <center>
+      <button id="darkmodebutton" onclick="toggleDarkMode()">toggle dark mode</button>
+      <h1 id="titleText">i broke the site again</h1>
+      <h2 id="dateText">10:43 AM</h2>
+      <h3>time</h3>
+      <b>
+        <!-- put site content here -->
+        <p>ok so yesterday i added OS-based dark mode to the site (a feature where if your device supports dark mode, the website syncs up with your preference)</p>
+        <p>and i wanted to add a toggleable dark mode for those whose devices didnt have OS-wide dark mode</p>
+        <p>so anyways it just never worked but thats not the point here</p>
+        <p>now OS-based dark mode is broken</p>
+        <p>im trying to make it so you can set dark mode via your OS and it live updates</p>
+        <p>and it WORKED (for a second)</p>
+        <p>As soon as i removed the code i wrote for toggleable dark mode, OS-based dark mode stopped working</p>
+        <p>so im gonna fix that real quick</p>
+        <p>OH</p>
+        <p>i see the issue</p>
+        <p>the site defaults to dark mode (so that people who dont have OS based dark mode dont get mad at me)</p>
+        <p>and the CSS I wrote checks if the device is in dark mode, and sets it accordingly</p>
+        <p>the issue is that it checks for dark mode, when the page is already in dark mode</p>
+        <p>so whats happening here is if the device is in dark mode, it re-sets the background to black and the text to white</p>
+        <p>although it is already set to that</p>
+        <p>I just need to make it so that it checks for light mode instead of dark mode</p>
+        <p>should be pretty easy</p>
+        <p>ok should be fixed now</p>
+        <p>hopefully it works</p>
+        <p>this chromebook (as far as i know) does not have dark mode so i wont be able to test it</p>
+        <p>actually, let me check if it does</p>
+        <p>ok it does but its a pretty hacky way of enabling it so idk</p>
+        <p>eh i might as well</p>
+        <p>what's the worst that could happen?</p>
+        <p>actually now that i think about it there are several back things that could happen</p>
+        <p>so im just not gonna do it</p>
+        <p>WAIT WHAT</p>
+        <p>apparently it can extract colors from your wallpaper and set it to the colors of your UI</p>
+        <p>similar to android 12</p>
+        <p>thats awesome i am definitely doing that</p>
+        <p>if it breaks i will let you all know</p>
+        <p>IT LOOKS WONDERFUL</p>
+        <p>The color extraction thing actually isnt at all like Android 12 but its still cool so im leaving it on</p>
+        <p>Oh and the site dark mode works now so yeah</p>
+        <p>i also got rid of the shadows around the text because i dont like them</p>
+        <p>maybe instead of making them blue ill make them some different colors</p>
+        <p>idk</p>
+        <p>I also want to add dark mode to the navigation buttons so im gonna do that real quick</p>
+      </b>
+      <button id="aboutbutton"><a href="/about.html">about</a></button>
+    </center>
+  </body>
+</html>

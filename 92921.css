@@ -1,0 +1,17 @@
+body {
+  background: white;
+}
+p {
+  color: yellow;
+  font-weight: bold;
+  font-family: sans-serif
+}
+h1 {
+  color: lawngreen;
+  font-weight: bold;
+  font-family: sans-serif
+  
+}
+#pain {
+  color: aquamarine
+}

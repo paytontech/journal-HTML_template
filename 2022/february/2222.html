@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="/design.css">
+    
+    <script src="/title.js"></script>
+    
+   
+  </head>
+  <center><center><b><p class="paytondev">paytondev</p></b></center></center>
+  <a href="/navigation.html"><button id="back">&#60; navigation</button></a>
+  
+  <body onload="getTitle();">
+    <center>
+     
+      <h1 id="titleText">happy groundhog day</h1>
+      <h2 id="dateText">2/2/22</h2>
+      <h3>9:46 AM</h3>
+      <b>
+        <!-- put site content here -->
+        <p>today is groundhog day i guess</p>
+        <p>is it groundhog or groundhog's?</p>
+        <p>i always get it mixed up</p>
+        <p>so anyways apparently it saw its shadow</p>
+        <p>i completely forget what that means but yeah</p>
+        <p>im gonna google it</p>
+        <p>winter will go on for 6 more weeks</p>
+        <p>wonderful</p>
+        <p>i dont really care too much but still</p>
+        <p>i like spring</p>
+        <p>its nice and warm and thats about all it has going for it, i guess</p>
+        <p>but still</p>
+        <p>we're supposed to have a really big storm</p>
+        <p>im letting my friend type here so ignore the next few lines</p>
+        <hr>
+        <p>payton wears the same sweater every day and has ugly clothing that he hides with his long black pants, and his ugly blue sweater</p>
+        <p>he also wears clothes that a kid who sounds like he is seven and smells like pee wears</p>
+        <p>he has a multi personality disorder; he acts all high and mighty at school, but at home the discord chats are bad</p>
+        <p>he also a soydev (?) he unironically thinks 4chan is for hackers, he believes me when i say that running neofetch hacks the CIA</p>
+        <p>he has so few friends that he has to buy robots to keep him from being lonely</p>
+        <hr>
+        <p>so anyways back to what i was saying</p>
+        <p>apparently we're supposed to have a really bad snow storm tomorrow</p>
+        <p>so yeah</p>
+        <p>6 to 8 inches of snow</p>
+        <p>ok cya</p>
+        <p>i am back</p>
+        <p>hello</p>
+        <p>uhh its 10:41 after meridian</p>
+        <p>I think that's what AM/PM means, i don't know</p>
+        <p>So I had an idea.</p>
+        <p>Y'know how I'm getting that OSKR thing for the robot? If you don't have any idea what I'm talking about, read <a href="/february/2122.html">yesterday's page</a></p>
+        <p>I have an idea</p>
+        <p>So basically there's this thing called SSH, which allows you to (kinda) remote into a computer</p>
+        <p>The reason I saw kinda is because you don't actually get access to the GUI and stuff, just the terminal</p>
+        <p>But that's perfect in this case.</p>
+        <p>So, in order to modify the OS of Vector with OSKR, you need to SSH into him.</p>
+        <p>This is fairly easy to do, but I'm not gonna explain it here because it's kind of a long process (<a href="https://oskr.ddl.io/oom/doc/unlock.html#step-5-getting-your-ssh-key">if you want to you can read about it here</a>)</p>
+        <p>So, theoretically, and again, this is entirely theoretical, you could run neofetch on it.</p>
+        <p>For those who don't know what neofetch is, get out.</p>
+        <p>But yeah, I could definitely run neofetch on this thing, since its (supposedly) just running a Linux based operating system (don't know what distro, possibly a custom one?)</p>
+        <p>Lucky for us, someone made a PDF file that goes extrememly in-depth about how Vector works and the boot process, and even the OSKR documentation goes a little bit into detail.</p>
+        <p>So, Vector is based on Linux running on top of an Android based bootloader.</p>
+        <p>Oh also some people may be wondering why you have to be sent a custom OSKR firmware instead of just using a regular default one, and the reason why is because Vector is extremely secure.</p>
+        <p>So, according to <a href="https://oskr.ddl.io/oom/doc/overview.html">the OSKR documentation,</a> when you boot Vector, 3 things happen:</p>
+        <ul>
+          <li>A cryptographic code stored in the Qualcom TrustZone, a special part of the CPU for sensitive info that is (by default) read-only and protected by e-fuses, is verified against the cryptographic code in the ABOOT (?) partition. If this fails, Vector will not boot.</li>
+          <li>If that passes, the ABOOT partition uses a different security key inside of it to verify the main BOOT partition. Again, if this fails, Vector will not boot. According to DDL, "The BOOT partition is a skeleton linux operating system to bootstrap the main system."</li>
+          <li>If that passes, the BOOT partition loads the SYSTEM partition. Inside the SYSTEM partition is an SHA256 hash of the manifest.json file (manifest.sha256). The manifest.json file constains important info (like telling the robot if its a developer robot or not). A hash is a string of characters generated from the files properties/contents. If the manifest.json file is edited, the manifest.sha256 file will be DIFFERENT than the actual manifest.json file, and Vector will not boot.</li>
+        </ul>
+        <p>The OSKR firmware is pretty much identical to the regular firmware, except on a normal Vector, contained in the manifest.json file is a line that says something along the lines of "DEV_VECTOR = 0", where as on an OSKR Vector, it says "DEV_VECTOR = 1" (in computers, 0 means off/no and 1 means on/yes)</p>
+        <p>I think you can see our issue now.</p>
+        <p>If we change the manifest.json file, the manifest.sha256 file will be different to the hash of the actual manifest.json. Oh, but couldn't we just edit the manifest.sha256 file to actually match up? No. This is because Vector stores a permenant copy of the manifest.sha256 file in Qualcomm's TrustZone. Wouldn't this cause an issue because the manifest.json file is constantly being updated, meaning the manifest.json file wouldn't match up? No, because the manifest.json file is basically never changed.</p>
+        <p>So, what the OSKR firmware does, it it first gets verification from Qualcomm's TrustZone using your ESN/QSN to edit the contents, changing the hash to the correct one. Then, it simply erases literally the entire robot's storage, then installs OSKR firmware.</p>
+        <p>The issue here is that it erases the entire robot's storage, including the recovery partition. This means that if anything AT ALL goes wrong during the installation, you're basically screwed because there is no more recovery partition to install software from.</p>
+        <p>But that's besides the point</p>
+        <p>THAT is why you need a custom OSKR firmware for OSKR to work properly. If you want more info/feel i havent explained it very well, go to <a href="https://oskr.ddl.io/oom/doc/overview.html">the OSKR documentation.</a></p>
+        <p>That's enough writing for today, goodbye</p>
+      </b>
+      <button id="aboutbutton"><a href="/about.html">about</a></button>
+    </center>
+  </body>
+</html>

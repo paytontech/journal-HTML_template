@@ -1,0 +1,104 @@
+#ffffff@font-face {
+  font-family: sfpro;
+  src: url(http://www.paytondev.xyz/2021/sfrounded.ttf);
+}
+
+body {
+  background: rgb(9,9,9);
+background: linear-gradient(90deg, rgba(9,9,9,1) 0%, rgba(47,47,147,1) 51%, rgba(46,163,189,1) 100%);
+  
+}
+p {
+  color: white;
+  font-family: sans-serif;
+  font-size: 10;
+}
+h1 {
+  font-family: sans-serif;
+  color: #00c9ff;
+  text-shadow: 0 0 7px #000000;
+  
+}
+
+#back {
+  position: fixed; /* Set the navbar to fixed position */
+  top: 0; /* Position the navbar at the top of the page */
+  width: 100%;
+  background-color: #ffffff;
+  border: none;
+  color: #00a7ff;
+  padding: 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  border-radius: 12px;
+  width: 100%;
+  position: sticky;
+  transition: 0.3s;
+}
+
+#back:hover {
+  position: fixed; /* Set the navbar to fixed position */
+  top: 0; /* Position the navbar at the top of the page */
+  width: 100%;
+  background-color: #cec8c8;
+  border: none;
+  color: #00a7ff;
+  padding: 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  border-radius: 12px;
+  width: 100%;
+  position: sticky;
+  text-shadow: 0 0 7px #000000;
+  
+}
+
+#back:active {
+  position: fixed; /* Set the navbar to fixed position */
+  top: 0; /* Position the navbar at the top of the page */
+  width: 100%;
+  background-color: #727272;
+  border: none;
+  color: #00a7ff;
+  padding: 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  border-radius: 12px;
+  width: 100%;
+  position: sticky;
+  text-shadow: 0 0 15px #000000;
+}
+
+#massivetext {
+  
+  resize: vertical;
+}
+img {
+  width: 50%;
+  height: 50%;
+}
+
+a {
+  text-decoration: none;
+}
+
+.paytondev {
+  color: white;
+  font-family: sfpro;
+  text-shadow: 0 0 7px #000000;
+}
+
+#aboutbutton {
+  color: gray;
+  font-family: sans-serif;
+  
+}

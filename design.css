@@ -1,0 +1,339 @@
+@font-face {
+  font-family: sfrounded;
+  src: url(/sfrounded.ttf);
+}
+@font-face {
+  font-family: sfsemibold;
+  src: url(/sfprosemibold.otf);
+}
+@font-face {
+  font-family: sfpro;
+  src: url(/sfpro.otf);
+}
+:root {
+  --font-color: white;
+  --bg-color: black;
+}
+
+a {
+  color: #00ffff;
+}
+
+a:visited {
+  color: #03a2ce;
+}
+
+body {
+  background: black;
+
+  font-family: sfpro;
+}
+p {
+  color: white;
+  font-family: sfsemibold;
+  
+}
+h1 {
+  font-family: sfsemibold;
+  color: white;
+  
+}
+h2 {
+  font-family: sfsemibold;
+  color: white;
+  
+}
+h3 {
+  font-family: sfsemibold;
+  color: white;
+  
+}
+#back {
+  position: fixed; /* Set the navbar to fixed position */
+  top: 0; /* Position the navbar at the top of the page */
+  width: 100%;
+  background-color: #ffffff;
+  border: none;
+  color: #000000;
+  padding: 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  border-radius: 12px;
+  width: 100%;
+  position: sticky;
+  transition: 0.3s;
+}
+
+#back:hover {
+  position: fixed; /* Set the navbar to fixed position */
+  top: 0; /* Position the navbar at the top of the page */
+  width: 100%;
+  background-color: #cec8c8;
+  border: none;
+  color: #000000;
+  padding: 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  border-radius: 12px;
+  width: 100%;
+  position: sticky;
+  text-shadow: 0 0 7px #00c9ff;
+  
+}
+
+#back:active {
+  position: fixed; /* Set the navbar to fixed position */
+  top: 0; /* Position the navbar at the top of the page */
+  width: 100%;
+  background-color: #727272;
+  border: none;
+  color: #000000;
+  padding: 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  border-radius: 12px;
+  width: 100%;
+  position: sticky;
+  text-shadow: 0 0 15px #00c9ff;
+}
+
+#massivetext {
+  
+  resize: vertical;
+}
+img {
+  width: 50%;
+  height: 50%;
+}
+
+a {
+  text-decoration: none;
+}
+
+.paytondev {
+  color: white;
+  font-family: sfrounded;
+  text-shadow: 0 0 7px #000000;
+}
+#aboutbutton {
+  font-family: sfrounded;
+  position: fixed; /* Set the navbar to fixed position */
+  top: 0; /* Position the navbar at the top of the page */
+  width: 100%;
+  background-color: #ffffff;
+  border: none;
+  color: rgb(0, 0, 0);
+  padding: 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  border-radius: 12px;
+  width: 50%;
+  position: sticky;
+  transition: 0.3s;
+  display:block;
+  font-family: sfpro;
+}
+#aboutbutton:hover {
+  font-family: sfrounded;
+  position: fixed; /* Set the navbar to fixed position */
+  top: 0; /* Position the navbar at the top of the page */
+  width: 100%;
+  background-color: #cec8c8;
+  border: none;
+  color: rgb(0, 0, 0);
+  padding: 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  border-radius: 12px;
+  width: 75%;
+  position: sticky;
+  text-shadow: 0 0 7px #000000; /* Set the navbar to fixed position */
+  display:block;
+}
+#aboutbutton:active {
+  font-family: sfrounded;
+  display:block;
+  position: fixed; /* 
+  Set the navbar to fixed position */
+  top: 0; /* Position the navbar at the top of the page */
+  width: 100%;
+  background-color: black;
+  border: none;
+  color: rgb(0, 0, 0);
+  padding: 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  border-radius: 12px;
+  width: 100%;
+  position: sticky;
+  text-shadow: 0 0 15px #000000;
+}
+
+/*light mode stuff*/
+@media (prefers-color-scheme: light) {
+  #aboutbutton {
+    font-family: sfrounded;
+    position: fixed; /* Set the navbar to fixed position */
+    top: 0; /* Position the navbar at the top of the page */
+    width: 100%;
+    background-color: #7a7a7a;
+    border: none;
+    color: rgb(255, 255, 255);
+    padding: 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    border-radius: 12px;
+    width: 50%;
+    position: sticky;
+    transition: 0.3s;
+    display:block;
+    font-family: sfpro;
+  }
+  #aboutbutton:hover {
+    font-family: sfrounded;
+    position: fixed; /* Set the navbar to fixed position */
+    top: 0; /* Position the navbar at the top of the page */
+    width: 100%;
+    background-color: #414141;
+    border: none;
+    color: rgb(255, 255, 255);
+    padding: 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    border-radius: 12px;
+    width: 75%;
+    position: sticky;
+    text-shadow: 0 0 7px #000000; /* Set the navbar to fixed position */
+    display:block;
+  }
+  #aboutbutton:active {
+    font-family: sfrounded;
+    display:block;
+    position: fixed; /* 
+    Set the navbar to fixed position */
+    top: 0; /* Position the navbar at the top of the page */
+    width: 100%;
+    background-color: #222222;
+    border: none;
+    color: rgb(255, 255, 255);
+    padding: 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    border-radius: 12px;
+    width: 100%;
+    position: sticky;
+    text-shadow: 0 0 15px #000000;
+  }
+  #back {
+    position: fixed; /* Set the navbar to fixed position */
+    top: 0; /* Position the navbar at the top of the page */
+    width: 100%;
+    background-color: #353535;
+    border: none;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    border-radius: 12px;
+    width: 100%;
+    position: sticky;
+    transition: 0.3s;
+  }
+  
+  #back:hover {
+    position: fixed; /* Set the navbar to fixed position */
+    top: 0; /* Position the navbar at the top of the page */
+    width: 100%;
+    background-color: #1f1f1f;
+    border: none;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    border-radius: 12px;
+    width: 100%;
+    position: sticky;
+    text-shadow: 0 0 7px #00c9ff;
+    
+  }
+  
+  #back:active {
+    position: fixed; /* Set the navbar to fixed position */
+    top: 0; /* Position the navbar at the top of the page */
+    width: 100%;
+    background-color: #080808;
+    border: none;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    border-radius: 12px;
+    width: 100%;
+    position: sticky;
+    text-shadow: 0 0 15px #00c9ff;
+  }
+  
+  body {
+    background: white;
+  
+    font-family: sfpro;
+  }
+  p {
+    color: black;
+    font-family: sfsemibold;
+    
+  }
+  h1 {
+    font-family: sfsemibold;
+    color: black;
+    
+    
+  }
+  h2 {
+    font-family: sfsemibold;
+    color: black;
+    
+  }
+  h3 {
+    font-family: sfsemibold;
+    color: black;
+    
+  }
+}
+
